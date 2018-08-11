@@ -19,9 +19,11 @@ io.on('connection', function(socket){
     console.log('message: ' + msg);
   });
 });
-
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+//edited this from 3000
+  console.log("Started listening on %s", app.url);
+});
+http.listen(proces.env.PORT, function(){
+  console.log('listening on *:');
 });
 
 io.emit('some event', {for: 'everyone'});
