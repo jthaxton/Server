@@ -5,9 +5,9 @@
     "node": "8.11.3"
   },
   "description": "chat app",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": ""echo \"ERROR\" && exit 1"
   },
   "dependencies": {
