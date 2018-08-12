@@ -22,7 +22,7 @@ io.on('connection', function(socket){
 //edited this from 3000
   console.log("Started listening on %s", app.url);
 
-http.listen(3000, function(){
+http.listen(process.env.PORT || 5000, (){
   console.log('listening on *:');
 });
 
